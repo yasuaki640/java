@@ -4,7 +4,7 @@ public class Ex_09_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Nannkai hurunenn? > ");
+        System.out.print("Nannkai huru? > ");
         int n = scan.nextInt();
         int [] snm = generateSnm(n);
         System.out.println("detame : ");
