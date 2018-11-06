@@ -11,7 +11,7 @@ public class Ex_03_2 {
         int b = scan.nextInt();
 
         int diff = Math.abs(a - b);
-
+        int gotDayInYear = Integer.ParseInt(date.substring 0, 3);
         System.out.println("two diff is " + diff);
     }
 }
