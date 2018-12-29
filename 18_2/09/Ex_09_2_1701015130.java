@@ -2,15 +2,15 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Ex_09_1 extends JFrame {
+public class Ex_09_2_1701015130 extends JFrame {
     final int windowWidth = 800;
     final int windowHeight = 500;
 
     public static void main(String[] args) {
-        new Ex_09_1();
+        new Ex_09_2_1701015130();
     }
 
-    public Ex_09_1() {
+    public Ex_09_2_1701015130() {
         Dimension dimOfScreen = Toolkit.getDefaultToolkit().getScreenSize();
 
         setBounds(dimOfScreen.width / 2 - windowWidth / 2, dimOfScreen.height / 2 - windowHeight / 2, windowWidth,
@@ -22,11 +22,11 @@ public class Ex_09_1 extends JFrame {
         MyJPanel panel = new MyJPanel();
         Container c = getContentPane();
         c.add(panel);
-        setVisible(true);
+        setVisible(true);        
     }
 
     public class MyJPanel extends JPanel implements ActionListener, MouseListener, MouseMotionListener {
-        /* 全体の設定に関する変数 */
+        /* 全体�?�設定に関する変数 */
         Dimension dimOfPanel;
         Timer timer;
         ImageIcon iconMe, iconEnemy;
@@ -52,17 +52,17 @@ public class Ex_09_1 extends JFrame {
         boolean[] isEnemyAlive = new boolean[numOfEnemy];
         boolean[] isEnemyMissileActive = new boolean[numOfEnemy];
 
-        /* コンストラクタ（ゲーム開始時の初期化）*/ 
+        /* コンストラクタ?��ゲー�?開始時の初期化�?*/ 
         public MyJPanel() {
-            // 全体の設定
+            // 全体�?�設�?
             setBackground(Color.black);
             addMouseListener(this);
             addMouseMotionListener(this);
             timer = new Timer(50, this);
             timer.start();
 
-            // 画像の取り込み
-            imgMe = getImg("jiki.jpg");
+            // 画像�?�取り込み
+            imgMe = getImg("jiki_v2.jpg");
             myWidth = imgMe.getWidth(this);
             myHeight = imgMe.getHeight(this);
 
@@ -70,39 +70,40 @@ public class Ex_09_1 extends JFrame {
             enemyWidth = imgEnemy.getWidth(this);
             enemyHeight = imgEnemy.getHeight(this);
 
-            // 自機と敵機の初期化
+            // 自機と敵機�?�初期�?
             initMyPlane();
             initEnemyPlane();
+            
         }
 
-        /* パネル上の描画 */
+        /* パネル上�?�描画 */
         public void paintComponent(Graphics g) {
             dimOfPanel = getSize();
             super.paintComponent(g);
 
-            // 各要素の描画
-            drawMyPlane(g); // 自機
-            drawMyMissile(g); // 自機のミサイル
-            drawEnemyPlane(g); // 敵機
-            drawEnemyMissile(g); // 敵機のミサイル
+            // �?要�?の描画
+            drawMyPlane(g); // 自�?
+            drawMyMissile(g); // 自機�?�ミサイル
+            drawEnemyPlane(g); // 敵�?
+            drawEnemyMissile(g); // 敵機�?�ミサイル
 
-            // 敵機を全機撃墜した時の終了処理
+            // 敵機を全機撃墜した時の終�?処�?
             if (numOfAlive == 0) {
                 System.exit(0);
             }
         }
 
-        /* 一定時間ごとの処理（ActionListener に対する処理）*/ 
+        /* �?定時間ごとの処�??�?ActionListener に対する処�??�?*/ 
         public void actionPerformed(ActionEvent e) {
             repaint();
         }
 
-        /* MouseListener に対する処理 */
-        // マウスボタンをクリックする
+        /* MouseListener に対する処�? */
+        // マウスボタンをクリ�?クする
         public void mouseClicked(MouseEvent e) {
         }
 
-        // マウスボタンを押下する
+        // マウスボタンを押下す�?
         public void mousePressed(MouseEvent e) {
             if (!isMyMissileActive) {
                 myMissileX = tempMyX + myWidth / 2;
@@ -111,25 +112,25 @@ public class Ex_09_1 extends JFrame {
             }
         }
 
-        // マウスボタンを離す
+        // マウスボタンを離�?
         public void mouseReleased(MouseEvent e) {
         }
 
-        // マウスが領域外へ出る
+        // マウスが�?�域外へ出�?
         public void mouseExited(MouseEvent e) {
         }
 
-        // マウスが領域内に入る
+        // マウスが�?�域�?に入�?
         public void mouseEntered(MouseEvent e) {
         }
 
-        /* MouseMotionListener に対する処理 */
+        /* MouseMotionListener に対する処�? */
         // マウスを動かす
         public void mouseMoved(MouseEvent e) {
             myX = e.getX();
         }
 
-        // マウスをドラッグする
+        // マウスをドラ�?グする
         public void mouseDragged(MouseEvent e) {
             myX = e.getX();
         }
@@ -142,7 +143,7 @@ public class Ex_09_1 extends JFrame {
             return img;
         }
 
-        /* 自機の初期化 */
+        /* 自機�?�初期�? */
         public void initMyPlane() {
             myX = windowWidth / 2;
             myY = windowHeight - 100;
@@ -150,7 +151,7 @@ public class Ex_09_1 extends JFrame {
             isMyMissileActive = false;
         }
 
-        /* 敵機の初期化 */
+        /* 敵機�?�初期�? */
         public void initEnemyPlane() {
             for (int i = 0; i < 7; i++) {
                 enemyX[i] = 70 * i;
@@ -175,7 +176,7 @@ public class Ex_09_1 extends JFrame {
             }
         }
 
-        /* 自機の描画 */
+        /* 自機�?�描画 */
         public void drawMyPlane(Graphics g) {
             if (Math.abs(tempMyX - myX) < gap) {
                 if (myX < 0) {
@@ -190,7 +191,7 @@ public class Ex_09_1 extends JFrame {
             }
         }
 
-        /* 自機のミサイルの描画 */
+        /* 自機�?�ミサイルの描画 */
         public void drawMyMissile(Graphics g) {
             if (isMyMissileActive) {
                 // ミサイルの配置
@@ -198,7 +199,11 @@ public class Ex_09_1 extends JFrame {
                 g.setColor(Color.white);
                 g.fillRect(myMissileX, myMissileY, 2, 5);
 
-                // 自機のミサイルの敵機各機への当たり判定
+                imgMe = getImg("jiki.jpg");
+                myWidth = imgMe.getWidth(this);
+                myHeight = imgMe.getHeight(this);
+
+                // 自機�?�ミサイルの敵機各機への当たり判�?
                 for (int i = 0; i < numOfEnemy; i++) {
                     if (isEnemyAlive[i]) {
                         if ((myMissileX >= enemyX[i]) && (myMissileX <= enemyX[i] + enemyWidth)
@@ -210,13 +215,13 @@ public class Ex_09_1 extends JFrame {
                     }
                 }
 
-                // ミサイルがウィンドウ外に出たときのミサイルの再初期化
+                // ミサイルがウィンドウ外に出たとき�?�ミサイルの再�?�期�?
                 if (myMissileY < 0)
                     isMyMissileActive = false;
             }
         }
 
-        /* 敵機の描画 */
+        /* 敵機�?�描画 */
         public void drawEnemyPlane(Graphics g) {
             for (int i = 0; i < numOfEnemy; i++) {
                 if (isEnemyAlive[i]) {
@@ -231,7 +236,7 @@ public class Ex_09_1 extends JFrame {
             }
         }
 
-        /* 敵機のミサイルの描画 */
+        /* 敵機�?�ミサイルの描画 */
         public void drawEnemyMissile(Graphics g) {
             for (int i = 0; i < numOfEnemy; i++) {
                 // ミサイルの配置
@@ -241,13 +246,13 @@ public class Ex_09_1 extends JFrame {
                     g.fillRect(enemyMissileX[i], enemyMissileY[i], 2, 5);
                 }
 
-                // 敵機のミサイルの自機への当たり判定
+                // 敵機�?�ミサイルの自機への当たり判�?
                 if ((enemyMissileX[i] >= tempMyX) && (enemyMissileX[i] <= tempMyX + myWidth)
                         && (enemyMissileY[i] + 5 >= myY) && (enemyMissileY[i] + 5 <= myY + myHeight)) {
                     System.exit(0);
                 }
 
-                // ミサイルがウィンドウ外に出たときのミサイルの再初期化
+                // ミサイルがウィンドウ外に出たとき�?�ミサイルの再�?�期�?
                 if (enemyMissileY[i] > dimOfPanel.height) {
                     if (isEnemyAlive[i]) {
                         enemyMissileX[i] = enemyX[i] + enemyWidth / 2;
