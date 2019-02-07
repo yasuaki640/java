@@ -28,7 +28,13 @@ public class Sample_02_2 extends JFrame {
            g.fillOval( 75, 100, 20, 20);
            g.fillOval(120, 100, 20, 20);
            g.fillRect(102, 123, 14, 30);
-           g.fillRect( 95, 162, 30, 14);
+            g.fillRect(95, 162, 30, 14);
+           
+            g.drawLine(215, 255, 225, 300);
+            g.drawLine(200, 200, 300, 210);
+            g.drawLine(200, 290, 300, 300);
+            g.drawLine(245, 200, 255, 300);
+            g.drawLine(250, 245, 295, 255);
        }
    }
 }

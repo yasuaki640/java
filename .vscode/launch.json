@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exam_01",
+            "request": "launch",
+            "mainClass": "Exam_01",
+            "projectName": "java_3464fbe9"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",
