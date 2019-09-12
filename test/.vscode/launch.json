@@ -1,0 +1,172 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SearchIdx",
+            "request": "launch",
+            "mainClass": "Chap03.SearchIdx",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SeqSearchSenForView",
+            "request": "launch",
+            "mainClass": "Chap03.SeqSearchSenForView",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SeqSearchSenFor",
+            "request": "launch",
+            "mainClass": "Chap03.SeqSearchSenFor",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinSearch",
+            "request": "launch",
+            "mainClass": "Chap03.BinSearch",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SeqSearchFor",
+            "request": "launch",
+            "mainClass": "Chap03.SeqSearchFor",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SeqSearch",
+            "request": "launch",
+            "mainClass": "Chap03.SeqSearch",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PhysicalExamination",
+            "request": "launch",
+            "mainClass": "Chap02.PhysicalExamination",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2_9",
+            "request": "launch",
+            "mainClass": "Chap02.Ex2_9",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DayOfYear",
+            "request": "launch",
+            "mainClass": "Chap02.DayOfYear",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReverseArray",
+            "request": "launch",
+            "mainClass": "Chap02.ReverseArray",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxOfArrayRand",
+            "request": "launch",
+            "mainClass": "MaxOfArrayRand",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxOfArray",
+            "request": "launch",
+            "mainClass": "MaxOfArray",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CloneArray",
+            "request": "launch",
+            "mainClass": "CloneArray",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex1_17",
+            "request": "launch",
+            "mainClass": "Ex1_17",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex1_16",
+            "request": "launch",
+            "mainClass": "Ex1_16",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex1_15",
+            "request": "launch",
+            "mainClass": "Ex1_15",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TriangleLB",
+            "request": "launch",
+            "mainClass": "TriangleLB",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ex1_14",
+            "request": "launch",
+            "mainClass": "ex1_14",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ex1_13",
+            "request": "launch",
+            "mainClass": "ex1_13",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ex1_12",
+            "request": "launch",
+            "mainClass": "ex1_12",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Multi99Table",
+            "request": "launch",
+            "mainClass": "Multi99Table",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Digits",
+            "request": "launch",
+            "mainClass": "Digits",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - test2",
+            "request": "launch",
+            "mainClass": "test2",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "test_cae5a2f8"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+package Chap02;
+
+import java.util.*;
+
+class PhysicalExamination {
+    static final int VMAX = 21;
+
+    static class PhyscData {
+        String name;
+        int height;
+        double vision;
+
+        // コンストラクタ
+        PhyscData(String name, int height, double vision) {
+            this.name = name;
+            this.height = height;
+            this.vision = vision;
+        }
+    }
+
+    // 身長の平均値を求める
+    static double aveHeight(PhyscData[] dat) {
+        double sum = 0;
+
+        for (int i = 0; i < dat.length; i++)
+            sum += dat[i].height;
+
+        return sum / dat.length;
+    }
+
+    static void StartVision(PhyscData[] dat, int[] stars) {
+        int i = 0;
+        for (i = 0; i < dat.length; i++)
+            if (dat[i].vision >= 0.0 && dat[i].vision <= VMAX / 10.0)
+                stars[(int) (dat[i].vision * 10)]++;
+    }
+
+    public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+
+        PhyscData[] x = { new PhyscData("赤坂忠雄", 162, 0.3), new PhyscData("加藤富明", 173, 0.7),
+                new PhyscData("斎藤正文", 175, 2.0), new PhyscData("武田信也", 171, 1.5), new PhyscData("長浜良一", 168, 0.4),
+                new PhyscData("浜田哲郎", 174, 1.2), new PhyscData("松富明雄", 169, 0.8), };
+        int[] stars = new int[VMAX];
+
+        System.out.println("身体検査一覧表");
+        System.out.println("氏名　　　身長　視力");
+        System.out.println("-------------------");
+        for (int i = 0; i < x.length; i++)
+            System.out.printf("%-8s%3d%5.1f\n", x[i].name, x[i].height, x[i].vision);
+
+        System.out.printf("\n平均身長：%5.1fcm\n", aveHeight(x));
+
+        StartVision(x, stars); // 視力の分布を求める。
+
+        System.out.println("\n視力の分布");
+        for (int i = 0; i < VMAX; i++) {
+            System.out.printf("%3.1f～：", i / 10.0);
+            for (int j = 0; j < stars[i]; j++)
+                System.out.print("*");
+            System.out.println();
+        }
+    }
+}

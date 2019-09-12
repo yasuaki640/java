@@ -1,0 +1,88 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DayOfYear",
+            "request": "launch",
+            "mainClass": "Chap02.DayOfYear",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeNumber3",
+            "request": "launch",
+            "mainClass": "Chap02.PrimeNumber3",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeNumber2",
+            "request": "launch",
+            "mainClass": "Chap02.PrimeNumber2",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PrimeNumber1",
+            "request": "launch",
+            "mainClass": "Chap02.PrimeNumber1",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2_7",
+            "request": "launch",
+            "mainClass": "Chap02.Ex2_7",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2_6",
+            "request": "launch",
+            "mainClass": "Chap02.Ex2_6",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CardConvRev",
+            "request": "launch",
+            "mainClass": "Chap02.CardConvRev",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2_5",
+            "request": "launch",
+            "mainClass": "Chap02.Ex2_5",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2_4",
+            "request": "launch",
+            "mainClass": "Chap02.Ex2_4",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayEqual",
+            "request": "launch",
+            "mainClass": "Chap02.ArrayEqual",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex2_3",
+            "request": "launch",
+            "mainClass": "Chap02.Ex2_3",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReverseArray",
+            "request": "launch",
+            "mainClass": "Chap02.ReverseArray",
+            "projectName": "test_cae5a2f8"
+        }
+    ]
+}
