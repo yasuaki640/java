@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - IntStackTester",
+            "request": "launch",
+            "mainClass": "Chap04.IntStackTester",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChainHashTester",
+            "request": "launch",
+            "mainClass": "Chap03.Hash.ChainHashTester",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChainHashTester",
+            "request": "launch",
+            "mainClass": "Chap03.ChainHashTester",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinSearchTester",
+            "request": "launch",
+            "mainClass": "Chap03.BinSearchTester",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinSearchX",
+            "request": "launch",
+            "mainClass": "Chap03.BinSearchX",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinSearchView",
+            "request": "launch",
+            "mainClass": "Chap03.BinSearchView",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SearchIdx",
             "request": "launch",
             "mainClass": "Chap03.SearchIdx",
