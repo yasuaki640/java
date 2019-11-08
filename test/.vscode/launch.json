@@ -2,6 +2,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FactorialFor",
+            "request": "launch",
+            "mainClass": "FactorialFor",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Factorial",
+            "request": "launch",
+            "mainClass": "Factorial",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EuclidGCD",
+            "request": "launch",
+            "mainClass": "EuclidGCD",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LastNElements",
+            "request": "launch",
+            "mainClass": "LastNElements",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IntqueTester",
+            "request": "launch",
+            "mainClass": "IntqueTester",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - List6_4",
+            "request": "launch",
+            "mainClass": "List6_4",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - List6_3",
+            "request": "launch",
+            "mainClass": "List6_3",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - IntStackTester",
             "request": "launch",
             "mainClass": "Chap04.IntStackTester",
