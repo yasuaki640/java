@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.sound.midi.Soundbank;
-
 class EuclidGCD {
     // 整数値x, yの最大公約数を求めて返却
     static int gcd(int x, int y) {

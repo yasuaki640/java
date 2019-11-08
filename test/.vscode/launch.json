@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Hanoi",
+            "request": "launch",
+            "mainClass": "Hanoi",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Recur2",
+            "request": "launch",
+            "mainClass": "Recur2",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Recur",
+            "request": "launch",
+            "mainClass": "Recur",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FactorialFor",
             "request": "launch",
             "mainClass": "FactorialFor",
