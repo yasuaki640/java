@@ -2,6 +2,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ShellSort2",
+            "request": "launch",
+            "mainClass": "ShellSort2",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShellSort",
+            "request": "launch",
+            "mainClass": "ShellSort",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinInsertionSort",
+            "request": "launch",
+            "mainClass": "BinInsertionSort",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InsertionSort",
+            "request": "launch",
+            "mainClass": "InsertionSort",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SelectionSort",
+            "request": "launch",
+            "mainClass": "SelectionSort",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShakerSort",
+            "request": "launch",
+            "mainClass": "ShakerSort",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BubbleSort3",
+            "request": "launch",
+            "mainClass": "BubbleSort3",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BubbleSort",
+            "request": "launch",
+            "mainClass": "BubbleSort",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EightQueen",
+            "request": "launch",
+            "mainClass": "EightQueen",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QueenBB",
+            "request": "launch",
+            "mainClass": "QueenBB",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QueenB",
+            "request": "launch",
+            "mainClass": "QueenB",
+            "projectName": "test_cae5a2f8"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hanoi",
             "request": "launch",
             "mainClass": "Hanoi",
