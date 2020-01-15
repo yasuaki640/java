@@ -7,20 +7,26 @@ class Partition {
         a[idx2] = tmp;
     }
 
-    static void quickSort(int[] a, int n) {
-        int L = 0;
-        int R = n - 1;
-        int x = a[n / 2];// 枢軸
+    static void quickSort(int[] a, int left, int right) {
+        int pl = left; // 左カーソル
+        int pr = right;// 右カーソル
+        int x = a[(pl + pr) / 2];// 枢軸
 
         // 配列を枢軸で分割
         do {
-            while (a[L] < x)
-                L++;
-            while (a[R] > x)
-                R--;
-            if (L <= R)
-                swap(a, L++, R--);
+            while (a[pl] < x)
+                pl++;
+            while (a[pr] > x)
+                pr--;
+            if (pl <= pr)
+                swap(a, pl++, pr--);
 
-        } while (L <= R);
+        } while (pl <= pr);
+
+        if (left < pr)
+            quickSort(a, left, pr);
+        if (pl < right)
+            quickSort(a, pl, right);
     }
+    
 }
