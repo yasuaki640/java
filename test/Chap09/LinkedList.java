@@ -1,7 +1,6 @@
 package Chap09;
 
 import java.util.Comparator;
-import java.util.Scanner;
 
 public class LinkedList<E> {
     // ノード
