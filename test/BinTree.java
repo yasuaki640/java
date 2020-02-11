@@ -41,7 +41,22 @@ public class BinTree<K, V> {
     }
 
     private int comp(K key1, K key2) {//
-        return (comparator == null) ? ((Comparable<K>) key1).compareTo(key2) 
-        : comparator.compare(key1, key2);
+        return (comparator == null) ? ((Comparable<K>) key1).compareTo(key2) : comparator.compare(key1, key2);
+    }
+
+    public V search(K key) {
+        Node<K, V> p = root;
+
+        while (true) {
+            if (p == null)
+                return null;
+            int cond = comp(key, p.getKey());
+            if (cond == 0)
+                return p.getValue();
+            else if (cond < 0)
+                p = p.left;
+            else
+                p = p.right;
+        }
     }
 }
